@@ -176,9 +176,32 @@ h1 {
 
 .numbers {
     background-color: var(--clr-brown);
+    color: var(--clr-white);
 }
 
 .numbers-img {
     width: 100vw;
     height: auto;
+}
+
+.numbers h2 {
+    font-family: var(--ff-nooa);
+    font-size: 1.25em;
+}
+
+.numbers span {
+    font-family: var(--ff-neuton);
+    font-size: 1em;
+    line-height: 2;
+}
+
+.numbers-text {
+    padding: 4vw 12vw;
+}
+
+.numbers-stats {
+    font-size: 0.8em;
+    margin: 4vw 12vw;
+    display: grid;
+    grid-template-columns: (2, 1fr);
 }
