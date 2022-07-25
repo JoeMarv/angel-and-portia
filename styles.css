@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@300;400;700&display=swap');
+
+:root {
+    --ff-nooa: Nooa;
+    --ff-neuton: 'Neuton', serif;
+    --clr-white: #FFFFFF;
+    --clr-grey-1: #D9D9D9;
+    --clr-grey-2: #616161;
+    --clr-grey-3: #383838;
+    --clr-brown: #2F1D18;
+}
+
+@font-face {
+    font-family: Nooa;
+    src: url(assets/NOOA\ Demi-Serif\ DEMO.ttf);
+    font-weight: normal;
+}
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0vw;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20vw 0vw 4vw 12vw;
+}
+
+.menu-btn {
+    background-color: var(--clr-brown);
+    opacity: 0.75;
+    border: none;
+    padding: 0vw 6vw;
+}
+
+.hamburger {
+    margin: 6vw 0vw 0vw 0vw;
+}
+
+.inspire {
+    background-image: url(assets/mobile-tv.png);
+    width: 100vw;
+    height: 147vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.canvas {
+    height: inherit;
+    backdrop-filter: brightness(0.7);
+}
+
+.inspire-text {
+    color: var(--clr-white);
+    font-family: var(--ff-nooa);
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.75vw;
+    font-size: 2.5em;
+    padding: 90vw 24vw 1vw 10vw;
+    line-height: 1.6;
+}
+
+.get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get-started-btn {
+    font-family: var(--ff-neuton);
+    color: var(--clr-white);
+    background-color: var(--clr-brown);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.5vw;
+    border: none;
+    padding: 4vw 8vw;
+    margin: 12vw 0vw;
+}
+
+.get-started-text {
+    color: var(--clr-brown);
+    font-family: var(--ff-neuton);
+    padding: 0vw 18vw 18vw 18vw;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.carousel-img {
+    width: 100vw;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    color: var(--clr-brown);
+    margin: 12vw 8vw;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel h2 {
+    font-family: var(--ff-nooa);
+    margin: 0vw;
+    font-size: 1.25em;
+    width: 60vw;
+}
+
+.carousel span {
+    font-family: var(--ff-neuton);
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.6;
+    width: 60vw;
+}
+
+.carousel-item {
+    padding: 0vw 4vw;
+    width: 60vw;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0vw); }
+	100% { transform: translateX(calc(-42vw * 3))}
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start-btn {
+    font-family: var(--ff-neuton);
+    color: var(--clr-white);
+    background-color: var(--clr-brown);
+    font-size: 0.9em;
+    font-weight: 300;
+    letter-spacing: 0.5vw;
+    border: none;
+    padding: 4vw 8vw;
+    margin: 0vw 0vw 20vw 0vw;
+}
+
+.numbers {
+    background-color: var(--clr-brown);
+}
+
+.numbers-img {
+    width: 100vw;
+    height: auto;
+}
