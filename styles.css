@@ -58,8 +58,12 @@ h1 {
     transition: var(--transition);
 }
 
-.menu-btn:hover, :focus {
+.menu-btn:hover { 
     opacity: 1;
+}
+
+.menu-btn:focus {
+    background-color: var(--clr-brown);
 }
 
 .hamburger {
