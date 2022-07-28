@@ -400,7 +400,7 @@ h1 {
     font-family: var(--ff-neuton);
     padding: 0vw;
     font-weight: 700;
-    font-size: 0.95em;
+    font-size: 0.9em;
     padding: 1vw 0vw;
     opacity: 0.75;
     cursor: pointer;
@@ -426,7 +426,7 @@ h1 {
 }
 
 .question-text {
-    font-size: 0.95em;
+    font-size: 0.8em;
     line-height: 1.6;
     margin: 2vw 0vw;
     display: none;
@@ -458,4 +458,46 @@ h1 {
     justify-content: center;
     color: var(--clr-white);
     font-family: var(--ff-neuton);
+}
+
+.details {
+    margin: 12vw 0vw;
+    line-height: 1.6;
+}
+
+.contact-and-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0vw 4vw 0vw 0vw;
+}
+
+.careers-and-blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4vw 2vw 2vw 0vw;
+}
+
+.contact, .home, .careers, .blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4vw 0vw;
+}
+
+.socials img {
+    margin: 0vw 2vw;
 }
